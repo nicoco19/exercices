@@ -8,6 +8,7 @@ const App = () => {
   const [bad, setBad] = useState(0);
   const [total, setTotal] = useState(0);
   const [isStat, setIsStat] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   function inc(name){
     if (name === "good"){
@@ -25,6 +26,17 @@ const App = () => {
     }
 
   }
+
+  setTimeout(()=> {
+    setLoading(false)
+  },3000)
+
+  if (loading){
+    return(
+        <h1>loading</h1>
+    )
+  }
+
 
   return(
       <div>
