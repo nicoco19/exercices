@@ -1,0 +1,11 @@
+### test insert
+POST http://localhost:3001/persons
+Content-Type: application/json
+
+{
+  "nom": "jaflaf,lz,z",
+  "telephone": "080-23991ee21"
+}
+
+### test delete
+DELETE http://localhost:3001/persons/6717c1293a669cb695580ed5
